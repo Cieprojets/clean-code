@@ -2,16 +2,40 @@ package ex1;
 
 import java.util.Date;
 
-public class entreprise {
+/**
+ * La classe Entreprise représente une entreprise avec ses informations de base.
+ */
+public class Entreprise {
 
-    public static final int capitalMax = 3000000;
-    public int Siret;
-    public String Nom;
+    /**
+     * Le capital maximum autorisé pour l'entreprise.
+     */
+    public static final int CAPITAL_MAX = 3000000;
+
+    /**
+     * Le numéro SIRET de l'entreprise.
+     */
+    public int siret;
+
+    /**
+     * Le nom de l'entreprise.
+     */
+    public String nom;
+
+    /**
+     * L'adresse de l'entreprise.
+     */
     public String adresse;
-    public Date date_Creation;
 
-    public void Afficher_statut() {
+    /**
+     * La date de création de l'entreprise.
+     */
+    public Date dateCreation;
 
+    /**
+     * Affiche le statut de l'entreprise.
+     */
+    public void afficherStatut() {
+        // Implémentation de la logique pour afficher le statut de l'entreprise
     }
-
 }

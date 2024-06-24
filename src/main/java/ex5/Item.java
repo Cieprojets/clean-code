@@ -8,7 +8,7 @@ public class Item {
     /**
      * Getter pour l'attribut nom
      *
-     * @return the nom
+     * @return le nom de l'item
      */
     public String getNom() {
         return nom;
@@ -17,7 +17,7 @@ public class Item {
     /**
      * Setter pour l'attribut nom
      *
-     * @param nom the nom to set
+     * @param nom le nom à définir pour l'item
      */
     public void setNom(String nom) {
         this.nom = nom;
@@ -26,7 +26,7 @@ public class Item {
     /**
      * Getter pour l'attribut poids
      *
-     * @return the poids
+     * @return le poids de l'item
      */
     public int getPoids() {
         return poids;
@@ -35,7 +35,7 @@ public class Item {
     /**
      * Setter pour l'attribut poids
      *
-     * @param poids the poids to set
+     * @param poids le poids à définir pour l'item
      */
     public void setPoids(int poids) {
         this.poids = poids;

@@ -11,18 +11,35 @@ public class Caisse {
     /**
      * Constructeur
      *
-     * @param nom
+     * @param nom le nom de la caisse
      */
     public Caisse(String nom) {
-        super();
         this.nom = nom;
         this.items = new ArrayList<>();
     }
 
     /**
+     * Vérifie si la caisse peut accepter un item en fonction de son poids.
+     *
+     * @param item l'item à vérifier
+     * @return true si l'item peut être ajouté à la caisse, false sinon
+     */
+    public boolean accepteItem(Item item) {
+        // Exemple de règles de vérification (peut être ajusté selon les besoins)
+        if (nom.equals("Petits objets") && item.getPoids() < 5) {
+            return true;
+        } else if (nom.equals("Moyens objets") && item.getPoids() >= 5 && item.getPoids() <= 20) {
+            return true;
+        } else if (nom.equals("Grands objets") && item.getPoids() > 20) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
      * Getter pour l'attribut nom
      *
-     * @return the nom
+     * @return le nom de la caisse
      */
     public String getNom() {
         return nom;
@@ -31,28 +48,4 @@ public class Caisse {
     /**
      * Setter pour l'attribut nom
      *
-     * @param nom the nom to set
-     */
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    /**
-     * Getter pour l'attribut items
-     *
-     * @return the items
-     */
-    public List<Item> getItems() {
-        return items;
-    }
-
-    /**
-     * Setter pour l'attribut items
-     *
-     * @param items the items to set
-     */
-    public void setItems(List<Item> items) {
-        this.items = items;
-    }
-
-}
+     * @param nom le nom à définir pour la cais
